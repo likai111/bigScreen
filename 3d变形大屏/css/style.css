@@ -1,0 +1,230 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+}
+a {
+    color: #ffffff;
+}
+
+#info {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px;
+    font-family: Monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+#menu {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.element {
+    position: relative;
+    width: 100px;
+    /* 120 160 */
+    height: 140px;
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+    border: 1px solid rgba(127, 255, 255, 0.25);
+    text-align: center;
+    cursor: default;
+}
+
+.element:hover {
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+    border: 1px solid rgba(127, 255, 255, 0.75);
+}
+.id {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: rgba(127, 255, 255, 0.75);
+}
+
+.element .symbol {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.element .rise {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.element .details {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: rgba(127, 255, 255, 0.75);
+}
+
+button {
+    color: rgba(127, 255, 255, 0.75);
+    background: transparent;
+    outline: 1px solid rgba(127, 255, 255, 0.75);
+    border: 0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+
+button:active {
+    color: #000000;
+    background-color: rgba(0, 255, 255, 0.75);
+}
+
+.title {
+    width: 80%;
+    margin: 2% auto 0;
+    height: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+    background: url(../img/title.png) no-repeat;
+    background-size: contain;
+}
+
+.left {
+    width: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 50%;
+}
+
+.left:hover {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.right {
+    width: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    top: 50%;
+}
+
+.right:hover {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}
+
+.imgdiv {
+    background-color: red;
+    height: 60%;
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    background: url(../img/store.png) no-repeat;
+    background-size: contain;
+    -webkit-mask: url(../img/store.png) no-repeat;
+    -webkit-mask-size:contain;
+}
+
+.pm {
+    margin-top: 1%;
+    background: url(../img/pm.png) no-repeat;
+    background-size: 100%;
+    width: 40%;
+    height: 15%;
+    float: right;
+    margin-right: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    display: table;
+}
+.pm span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.money {
+    margin-top: 1%;
+    background: url(../img/sale.png) no-repeat;
+    background-size: 100%;
+    width: 40%;
+    height: 15%;
+    float: right;
+    margin-right: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    display: table;
+}
+.money span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.precent {
+    margin-top: 1%;
+    background: url(../img/tb.png) no-repeat;
+    background-size: 100%;
+    width: 40%;
+    height: 15%;
+    float: right;
+    margin-right: 10%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    display: table;
+}
+.precent span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 12%;
+    background: url(../img/bottom.png) no-repeat;
+    background-size: contain;
+}
+.close {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    top: 2%;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.close:hover {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.95);
+}

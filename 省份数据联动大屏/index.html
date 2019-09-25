@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Echart45</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./script/jquery-3.4.1.min.js"></script>
+  <script src="./script/echarts.min.js"></script>
+  <script src="./lib/jquery.rotating-slider.js"></script>
+  <link rel="stylesheet" href="./lib/rotating-slider.css">
+</head>
+
+<body>
+  <div class="total">
+    <div class="line1 white text-center">
+      省份数据可视化平台
+    </div>
+    <div class="line2 flexrow">
+      <div class="left">
+        <section class="leftTop">
+          <h3 class="white text-center">门店销售完成率</h3>
+          <div class="chart1"></div>
+        </section>
+
+        <section class="leftBottom">
+          <h3 class="white text-center">门店销售同步分析</h3>
+          <div class="chart2"></div>
+        </section>
+      </div>
+      <div class="center">
+        <div class="data white pos-abs">
+          <h3 class="text-center">年度销售额</h3>
+          <div class="amount text-center">￥<span class="pmzd">10,258,954</span></div>
+          <div class="chance flexrow">
+            <div class="wcl flexrow"><b></b>
+              <div class="flexcolumn"><span class="sj">89.6%</span><span class="blue pos-rel"><i
+                    class="pos-abs"></i>完成率</span></div>
+            </div>
+            <div class="zkl flexrow"><b></b>
+              <div class="flexcolumn"><span class="sj">72.6%</span><span class="blue pos-rel"><i
+                    class="pos-abs"></i>折扣率</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="show text-center pos-abs white">
+          <div>门店：<span>1027家</span></div>
+          <div>Top1：<span>XX门店</span></div>
+        </div>
+        <div class="map pos-abs" id="map"></div>
+      </div>
+      <div class="right">
+        <section class="rightTop">
+          <h3 class="white text-center">门店客单量分析</h3>
+          <div class="chart3"></div>
+        </section>
+        <section class="rightBottom">
+          <h3 class="white text-center">消费人群占比分析</h3>
+          <div class="chart4"></div>
+        </section>
+      </div>
+
+    </div>
+    <div class="line3 flexrow pos-rel">
+      <div class="rotating-slider">
+        <ul class="slides white" id="slides">
+          <!-- 11组 每组6个城市 -->
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li>
+          <!-- <li>
+            <div class="inner" name="jiangsu">
+              江苏省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="zhejiang">
+              浙江省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="anhui">
+              安徽省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hubei">
+              湖北省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="jiangxi">
+              江西省
+            </div>
+          </li>
+          <li>
+            <div class="inner" name="hunan">
+              湖南省
+            </div>
+          </li> -->
+        </ul>
+      </div>
+      <div class="curProvince pos-abs">
+        <div class="text-center">
+          <span>江苏省</span>销售情况分析</div>
+        </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="./script/main.js"></script>
+
+</html>
